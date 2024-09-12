@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="try.css">
-    <title>Document</title>
-</head>
-<body>
+/* From Uiverse.io by alexruix */ 
 <div class="form-box">
 <form class="form">
+    <link rel="stylesheet" href="style.css">
     <span class="title">Sign up</span>
     <span class="subtitle">Create a free account with your email.</span>
     <div class="form-container">
@@ -22,5 +15,3 @@
   <p>Have an account? <a href="">Log in</a> </p>
 </div>
 </div>
-</body>
-</html>
