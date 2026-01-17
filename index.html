@@ -3,18 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird</title>
+    <title>Inventory Management System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
-        <canvas id="game-canvas" width="400" height="600"></canvas>
-        <div id="score">Score: 0</div>
-        <div id="game-over" style="display: none;">
-            <h2>Game Over</h2>
-            <button id="restart-btn">Restart</button>
+    <div class="container">
+        <header class="dashboard-header">
+            <h1>Inventory Management System</h1>
+            <a href="dashboard.html" class="nav-link">View Dashboard</a>
+        </header>
+
+        <div class="form-container">
+            <form id="add-item-form">
+                <input type="hidden" id="item-id" name="id">
+                <input type="text" id="item-name" name="name" placeholder="Item Name" required>
+                <textarea id="item-description" name="description" placeholder="Item Description"></textarea>
+                <input type="number" id="item-quantity" name="quantity" placeholder="Quantity" min="0" required>
+                <input type="number" id="item-price" name="price" placeholder="Price" min="0" step="0.01" required>
+                <button type="submit">Save Item</button>
+                <button type="button" id="cancel-edit-btn" style="display: none;">Cancel Edit</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Inventory Items</h2>
+            <table id="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Created At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-body">
+                    <!-- Items will be dynamically inserted here -->
+                </tbody>
+            </table>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

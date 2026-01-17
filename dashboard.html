@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <h1>Inventory Dashboard</h1>
+            <a href="index.html" class="nav-link">Manage Inventory</a>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Products</h3>
+                <p id="total-products">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Item Quantity</h3>
+                <p id="total-quantity">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Inventory Value</h3>
+                <p id="total-value">$0.00</p>
+            </div>
+        </div>
+
+        <div class="dashboard-main">
+            <div class="chart-container">
+                <h2>Product Quantities</h2>
+                <canvas id="quantity-chart"></canvas>
+            </div>
+            <div class="recent-items-container">
+                <h2>Recently Added Items</h2>
+                <ul id="recent-items-list">
+                    <!-- Recent items will be dynamically inserted here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
