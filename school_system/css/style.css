@@ -1,0 +1,9 @@
+body{font-family:Arial, Helvetica, sans-serif;background:#f7f7f7;color:#222}
+.container{max-width:900px;margin:36px auto;padding:20px;background:#fff;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+h1,h2{margin-top:0}
+input,select,button{display:block;width:100%;padding:8px;margin:6px 0}
+button{width:auto;padding:8px 14px}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+table th, table td{padding:8px;border:1px solid #ddd}
+.error{color:#c00}
+a{color:#0066cc}
